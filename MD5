@@ -1,0 +1,12 @@
+7e5797f60de80fd15c16f6fbb7c72ae5 *DESCRIPTION
+995e692ab47a98cd6e58d11f70899213 *LICENSE
+7a9b6cdb6f5ec1e46d0299fd2448eadc *NAMESPACE
+03499d7a7cef5c4eacbb25d538770cce *R/tippy.R
+8a0ef5bc3523afb0060eff726c0e6acd *R/use_tippy.R
+fc9eac447cd264685226b034725fe790 *README.md
+e2ce26b0948d13b89a4c720bd61dde47 *inst/htmlwidgets/lib/tippyjs-2.5.2/tippy.all.min.js
+9ecc31391251e40bfc20f61496f90154 *inst/htmlwidgets/tippy.js
+694c1713e1e5967834dcc0f716c8c15e *inst/htmlwidgets/tippy.yaml
+1634fcfa436ff730aaaa145caac1d772 *man/tippy-shiny.Rd
+62f3bbdac200d1a1ebedef3e781bf861 *man/tippy.Rd
+9418b8622e809e46bcc057e54ae8fc9e *man/use_tippy.Rd
