@@ -6,31 +6,31 @@ HTMLWidgets.widget({
 
   factory: function(el, width, height) {
 
-    // TODO: define shared variables for this instance
+    var id;
 
     return {
 
       renderValue: function(x) {
         
-        var id = el.id;
+        id = el.id
         
         if(x.hasOwnProperty('element')){
-          id = x.element;
-          var sel = document.getElementById(id);
-          sel.setAttribute("title", x.tooltip);
-          el.style.display = "none";
+          tippy('#' + x.element, x.opts);
+        } else if(x.hasOwnProperty('class')){
+          if(x.hasOwnProperty('opts')){
+            tippy('.' + x.class, x.opts);
+          } else {
+            tippy('.' + x.class);
+          }
         } else {
           el.innerHTML = x.text;
-          el.setAttribute("title", x.tooltip);
+          el.setAttribute("data-tippy", x.tooltip);
+          tippy('#' + id, x.opts);
         }
-
-        tippy('#' + id, x.opts);
 
       },
 
       resize: function(width, height) {
-
-        // TODO: code to re-render the widget with a new size
 
       }
 
